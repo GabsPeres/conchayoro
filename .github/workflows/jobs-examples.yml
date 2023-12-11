@@ -14,4 +14,4 @@ jobs:
    needs: build
    steps:
      - name: step do deploy
-       run: echo Hello, world! Deploy.
+       run: ecko Hello, world! Deploy.
