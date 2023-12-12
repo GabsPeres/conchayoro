@@ -1,10 +1,18 @@
-jobx:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-       node-version: 14
+name: steps examples
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  jobx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 14
           
-    - name: Verification of Node.js version
-       run: node --version
+      - name: Verification of Node.js version
+        run: node --version
